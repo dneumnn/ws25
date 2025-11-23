@@ -30,4 +30,11 @@ cd block1
 jupyter notebook
 ```
 
-### block2
+### block2: large language model and computer vision
+
+```bash
+conda create --name ws25_2 python=3.12
+conda activate ws25_2
+pip install jupyter numpy torch matplotlib pandas scikit-learn
+pip install transformers
+```
