@@ -32,9 +32,40 @@ jupyter notebook
 
 ### block2: large language model and computer vision
 
+#### Language Models
+
 ```bash
 conda create --name ws25_2 python=3.12
 conda activate ws25_2
-pip install jupyter numpy torch matplotlib pandas scikit-learn
-pip install transformers
+pip install jupyter
+pip install nltk
+```
+
+#### Large Language Models with Transformer
+
+```bash
+conda create --name ws25_3 python=3.12
+conda activate ws25_3
+pip install jupyter
+pip install torch transformer tiktoken
+```
+
+#### ConversationalAI with Chainlit and Ollama
+
+```bash
+conda create --name ws25_4 python=3.12
+conda activate ws25_4
+pip install chainlit ollama
+cd convAI
+```
+
+### block3: agentic ai
+
+```bash
+conda create --name ws25_5 python=3.12
+conda activate ws25_5
+pip install jupyter
+pip install torch transformers
+pip install accelerate
+pip install torchvision numpy
 ```
