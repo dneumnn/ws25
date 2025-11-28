@@ -14,6 +14,7 @@ import os
 
 from agno.agent import Agent
 from agno.models.ollama import Ollama
+from agno.tools.yfinance import YFinanceTools # needs pip install yfinance
 
 from instrumentation import instrument
 instrument(service_name="stock-trader-service", service_version="0.0.1", project_name="stock-trader")
@@ -25,8 +26,12 @@ model = Ollama(id=os.getenv("MODEL_ID", "granite4:3b"))
 trader_agent = Agent(model=model,
               name="Stock Trader",
               instructions=['You are a stock trader agent'],
-              tools=[sent_order_to_broker],
+              tools=[YFinanceTools(), sent_order_to_broker],
               )
 
-trader_agent.print_response("Please buy 5 stocks of Apple")
+
+
+
+if "__init__" == "__main__":
+    trader_agent.print_response("Please buy 5 stocks of Apple with price limit 200$")
 
