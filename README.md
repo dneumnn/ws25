@@ -69,3 +69,14 @@ pip install torch transformers
 pip install accelerate
 pip install torchvision numpy
 ```
+
+#### Agents with Agno
+
+<https://github.com/agno-agi/agno>
+
+```bash
+conda create --name ws25_6 python=3.12
+conda activate ws25_6
+pip install agno
+cd agno
+```
