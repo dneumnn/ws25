@@ -80,3 +80,25 @@ conda activate ws25_6
 pip install agno
 cd agno
 ```
+
+#### MCP
+
+<https://gofastmcp.com/getting-started/quickstart>
+
+```bash
+conda create --name ws25_7 python=3.12
+conda activate ws25_7
+pip install fastmcp
+cd mcp
+```
+
+
+#### Agent2
+
+```bash
+conda create --name agent2 python=3.12
+conda activate agent2
+pip install agno ollama
+pip install yfinance
+cd agno
+```
