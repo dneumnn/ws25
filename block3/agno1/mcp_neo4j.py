@@ -57,7 +57,7 @@ async def run(message):
 #message = "show me all applications that use the TextAtom from UI library"
 #message = "how many bmw specific libraries contains each application of the software system?"
 
-message = "how many applications contains the software system?"
+message = "how many applications contains the software system and how many classes do each application uses?"
 
 if __name__ == "__main__":
     asyncio.run(run(message=message))

@@ -5,13 +5,13 @@ from fastmcp.client import StdioTransport
 # ######## Remote Server #########
 # client = Client("http://localhost:8000/mcp")
 
+
 # ######## Local Server ##########
 # "transport": "stdio",
 # "command": "python",
 # "args": ["./server.py", "--verbose"],
 # "env": {"DEBUG": "true"},
 # "cwd": "/path/to/server",
-
 import os
 cwd=os.getcwd()
 print(cwd)
