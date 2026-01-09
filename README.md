@@ -102,3 +102,100 @@ pip install agno ollama
 pip install yfinance
 cd agno
 ```
+
+### block4: agentic infrastructure
+
+```bash
+conda create --name agntcy python=3.13
+conda activate agntcy
+```
+
+#### wsgi
+
+- <https://wsgi.readthedocs.io/en/latest/index.html>
+- <https://gunicorn.org>
+
+```bash
+pip install gunicorn
+pip install requests
+````
+
+Start server at <http://127.0.0.1:8000>
+
+```bash
+cd wsgi
+gunicorn main:app
+```
+
+#### asgi
+
+ASGI (Asynchronous Server Gateway Interface) is a spiritual successor to WSGI, intended to provide a standard interface between async-capable Python web servers, frameworks, and applications.
+
+- <https://asgi.readthedocs.io/en/latest/>
+- <https://uvicorn.dev>
+
+```bash
+pip install uvicorn
+pip install requests
+````
+
+Start server at <http://127.0.0.1:8000>
+
+```bash
+cd asgi
+uvicorn main:app
+```
+
+#### asyncio
+
+cd asyncio
+
+#### a2a
+
+### block5:
+
+#### predictive coding theory
+
+prdictive coding theory offers a unified theory that bridges numerous aspects of brain function, from perception and motor control to learning and memory.
+
+Furthermore, predictive coding has significant implications for artificial intelligence and machine learning, providing insights into how algorithms might mimic human learning and perception.
+
+At the heart of predictive coding lies a fundamental concept: the brain constructs internal representations of the world to predict sensory inputs, and these predictions are continuously updated based on sensory feedback.
+
+The mathematical intuition behind this process is encapsulated in the model’s loss function, which quantifies the discrepancy between the predicted sensory inputs and the actual sensory inputs received by the brain.
+
+The loss function in predictive coding is often conceptualized as the sum of prediction errors across different levels of a hierarchical system
+
+Each level of this hierarchy makes predictions about the level below, and discrepancies between predictions and actual observations are fed back up the hierarchy to update and refine the predictions. This process is driven by the goal of minimizing the overall prediction error across the system.
+
+We use the predictive_coding library found at: <https://github.com/Bogacz-Group/PredictiveCoding.git> which is based on <https://github.com/YuhangSong/Prospective-Configuration>.
+
+and move the library your repo.
+
+```bash
+conda create --name ws25_8 python=3.12
+conda activate ws25_8
+pip install jupyter 
+pip install torch torchvision matplotlib tqdm pandas seaborn
+pip install scikit-learn
+
+```
+
+#### Retrieval Augmented Generation
+
+```bash
+conda create --name ws25_9 python=3.12
+conda activate ws25_9
+pip install jupyter 
+pip install chromadb
+pip install llama-index
+pip install llama-index-readers-web
+pip install llama-index-embeddings-ollama
+pip install llama_index-embeddings-huggingface
+pip install llama-index-llms-ollama
+pip install llama-index-vector-stores-chroma
+pip install requests
+pip install beautifulsoup4
+
+pip install wikipedia-api
+```
