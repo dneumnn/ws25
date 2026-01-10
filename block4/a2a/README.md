@@ -12,4 +12,3 @@ pip install ollama
 pip install openinference-instrumentation-agno
 pip install opentelemetry-exporter-otlp-proto-http 
 ```
-

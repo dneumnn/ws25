@@ -152,7 +152,20 @@ cd asyncio
 
 #### a2a
 
-### block5:
+Let Agents talk to each other via A2A
+
+```bash
+pip install a2a-sdk
+pip install 'a2a-sdk[http-server]'
+pip install fastapi
+pip install agno
+pip install ddgs
+pip install ollama
+pip install openinference-instrumentation-agno
+pip install opentelemetry-exporter-otlp-proto-http 
+```
+
+### block5
 
 #### predictive coding theory
 
@@ -215,7 +228,8 @@ pip install ollama
 ```bash
 conda create --name WS25_10 python=3.12
 conda activate WS25_10
-pip install networkx pandas
+pip install networkx pandas matplotlib node2vec
+pip install scikit-learn
 ```
 
-
+run python graph_analysis.py

@@ -15,6 +15,7 @@ kg = KGGen(
   temperature=0.0,        # Default temperature
 )
 
+
 """
             input_data: Text string or list of message dicts
             model: Name of OpenAI model to use
@@ -26,7 +27,7 @@ kg = KGGen(
 output_folder = "./graph"
 graph = kg.generate(
   input_data=page.text,
-  context="Family relationships",
+  context="Life of Albert Einstein",
   output_folder=output_folder
 )
 

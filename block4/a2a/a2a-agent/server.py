@@ -1,4 +1,4 @@
-######## Agent 1 - Travel Agent ########
+######## Travel Agent ########
 from a2a.server.apps import A2AFastAPIApplication
 from a2a.types import AgentCard, AgentSkill, AgentCapabilities
 from a2a.server.request_handlers import DefaultRequestHandler
@@ -12,7 +12,6 @@ AGENT_NAME = "travel planner agent"
 AGENT_DESCRIPTION ="travel planner"
 
 if __name__ == "__main__":
-
 
     agent_skill = AgentSkill(
         id='travel_planner',
@@ -38,9 +37,10 @@ if __name__ == "__main__":
         task_store=InMemoryTaskStore(),
     )
 
-    server = A2AFastAPIApplication(agent_card=agent_card,
-                               http_handler=request_handler,
-                               )
+    server = A2AFastAPIApplication(
+        agent_card=agent_card,
+        http_handler=request_handler,
+        )
     
     import uvicorn
 
