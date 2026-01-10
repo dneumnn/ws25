@@ -188,6 +188,7 @@ conda create --name ws25_9 python=3.12
 conda activate ws25_9
 pip install jupyter 
 pip install chromadb
+
 pip install llama-index
 pip install llama-index-readers-web
 pip install llama-index-embeddings-ollama
@@ -199,3 +200,22 @@ pip install beautifulsoup4
 
 pip install wikipedia-api
 ```
+
+#### KG-Gen
+
+```bash
+conda create --name kggen python=3.12
+conda activate kggen
+pip install kg-gen
+pip install ollama
+```
+
+#### Graphs with NetworkX
+
+```bash
+conda create --name WS25_10 python=3.12
+conda activate WS25_10
+pip install networkx pandas
+```
+
+
